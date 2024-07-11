@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Square</h1>
+    <main 
+        style="
+        width:200px;
+        height:200px;
+        background-color:blue;
+        "
+    >
+   </main>
+   <h1>Circle</h1>
+   <main
+        style="
+        width:200px;
+        height:200px;
+        background-color:blue;
+        border-radius: 50%
+        "
+    >
+    </main>
+    <h1>Oval</h1>
+    <main
+        style="
+        width:200px;
+        height:100px;
+        background-color:blue;
+        border-radius:50%
+        "
+    >
+    </main>
+    <h1>Up Triangle</h1>
+    <main
+        style="
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent; 
+        border-right: 100px solid transparent; 
+        border-bottom: 200px solid blue;
+        "
+    >
+    </main>
+    <h1>Down Triangle</h1>
+    <main
+        style="
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent; 
+        border-right: 100px solid transparent; 
+        border-top: 200px solid blue;
+        "
+    >
+    </main>
+    <h1>Left Triangle</h1>
+    <main
+        style="
+        width: 0;
+        height: 0;
+        border-top: 100px solid transparent; 
+        border-bottom: 100px solid transparent;
+        border-right: 200px solid blue; 
+        "    
+    >
+    </main>
+    <h1>Right Triangle</h1>
+    <main
+        style="
+        width: 0;
+        height: 0;
+        border-top: 100px solid transparent; 
+        border-bottom: 100px solid transparent; 
+        border-left: 200px solid blue;
+        "    
+    >
+    </main>
+    <br><br><br><br><br>
+    <main
+        style="
+        width: 0;
+        height: 0;
+        border-right: 200px solid transparent; 
+        border-top: 200px solid blue; 
+        "    
+    >
+    </main>
+    <br><br><br><br><br>
+    <main
+        style="
+        width: 0;
+        height: 0;
+        border-left: 200px solid transparent; 
+        border-top: 200px solid blue; 
+        "    
+    >
+    </main>
+    <h1>Diamond</h1>
+    <main
+        style="
+        width: 100px;
+        height: 100px;
+        background-color:blue;
+        transform: rotate(45deg)
+        "    
+    >
+    </main>
+    <h1>Heart</h1>
+    <style>
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            transform: rotate(-45deg);
+            background-color: blue;
+            margin: 50px; /* Adjust as needed */
+          }
+          .heart::before,
+          .heart::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50%;
+          }
+          .heart::before {
+            top: -50px;
+            left: 0;
+          }
+          .heart::after {
+            top: 0;
+            left: 50px;
+          }
+
+    </style>
+    <div class="heart"></div>
+</body>
+</html>
